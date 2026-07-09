@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Abdurrahman Farid</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan font Google Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Portofolio<span>Ku</span>.</h2>
+            
+            <!-- Tombol Trigger Menu di HP -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Hero / Beranda -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1>Halo, Saya <span>Abdurrahman Farid</span></h1>
+            <p>Seorang Web Developer & Desainer Kreatif yang berfokus pada pengembangan website interaktif.</p>
+            <div class="hero-buttons">
+                <a href="#proyek" class="btn">Lihat Karya</a>
+                <a href="#kontak" class="btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <!-- Ditambahkan hidden-element agar teks tentang saya melayang muncul -->
+                <div class="about-text hidden-element">
+                    <p>Saya adalah seorang pengembang web yang antusias dengan teknologi baru. Saya memiliki pengalaman dalam membangun website responsif menggunakan standar HTML5, CSS3, dan kerangka modern lainnya.</p>
+                    <p>Saya selalu berfokus pada performa kecepatan website dan tampilan yang nyaman digunakan di perangkat seluler maupun komputer desktop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="proyek" class="projects">
+        <div class="container">
+            <h2>Proyek Terbaru</h2>
+            <p class="subtitle">Beberapa hasil karya terbaik yang pernah saya kerjakan</p>
+            <div class="project-grid">
+                <!-- Kartu Proyek 1 (dengan hidden-element) -->
+                <div class="project-card hidden-element">
+                    <div class="card-icon">💻</div>
+                    <h3>Aplikasi Kasir</h3>
+                    <p>Aplikasi kasir sederhana berbasis web untuk membantu UMKM mencatat transaksi harian secara real-time.</p>
+                    <a href="#" class="btn-text">Selengkapnya &rarr;</a>
+                </div>
+                <!-- Kartu Proyek 2 (dengan hidden-element) -->
+                <div class="project-card hidden-element">
+                    <div class="card-icon">🎨</div>
+                    <h3>Landing Page</h3>
+                    <p>Desain halaman depan modern untuk perusahaan rintisan di bidang teknologi pendidikan.</p>
+                    <a href="#" class="btn-text">Selengkapnya &rarr;</a>
+                </div>
+                <!-- Kartu Proyek 3 (Sekarang sudah ditambahkan hidden-element agar kompak!) -->
+                <div class="project-card hidden-element">
+                    <div class="card-icon">🤖</div>
+                    <h3>Bot Telegram</h3>
+                    <p>Bot layanan pelanggan otomatis menggunakan integrasi API pihak ketiga secara otomatis.</p>
+                    <a href="#" class="btn-text">Selengkapnya &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="contact">
+        <!-- Ditambahkan hidden-element agar form/tombol email muncul dengan transisi cantik -->
+        <div class="container hidden-element">
+            <h2>Mari Berkolaborasi!</h2>
+            <p>Punya ide proyek menarik atau ingin berdiskusi? Saya selalu siap membantu merealisasikan ide Anda.</p>
+            <a href="mailto:emailanda@email.com" class="btn">Kirim Email Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abdurrahman Farid. Dibuat dengan ❤️ untuk Desktop & HP.</p>
+    </footer>
+
+    <!-- ⚠️ SCRIPT JAVASCRIPT WAJIB DI SINI (Sebelum tag </body>) -->
+    <script src="script.js"></script>
+</body>
+</html>
